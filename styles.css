@@ -373,5 +373,7 @@ h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
   letter-spacing: 0.06em; text-transform: uppercase; line-height: 1;
 }
 .site-footer__meta { margin-top: 6px; font-size: 14px; color: var(--muted-dark); }
+.site-footer__credits { margin-top: 10px; max-width: 60ch; font-size: 12px; line-height: 1.5; color: #8E8070; }
+.site-footer__credits a { color: #8E8070; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 0 20px; font-size: 15px; font-weight: 600; }
 .site-footer nav a { padding: 11px 0; display: inline-block; }
