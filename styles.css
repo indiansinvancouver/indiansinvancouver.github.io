@@ -144,13 +144,13 @@ h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
 .meetup__global a { color: var(--ink); }
 .meetup .btn-row { padding-top: 4px; }
 
-/* Jantar Mantar is Everywhere: the global day of action, first block on the home page */
+/* First block on the home page (currently Embassy Chalo, 24 Oct) */
 .everywhere { position: relative; overflow: hidden; background: var(--ink); color: var(--paper); }
 .everywhere a { color: var(--paper); }
-.everywhere__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+.everywhere__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
 .everywhere__shade {
   position: absolute; inset: 0;
-  background-image: linear-gradient(180deg, rgba(20,16,13,0.62) 0%, rgba(20,16,13,0.72) 55%, rgba(20,16,13,0.9) 100%);
+  background-image: linear-gradient(180deg, rgba(20,16,13,0.55) 0%, rgba(20,16,13,0.7) 50%, rgba(20,16,13,0.93) 100%);
 }
 .everywhere__grid {
   position: relative; padding-top: 60px; padding-bottom: 8px;
@@ -161,27 +161,27 @@ h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
 .lockup__logo { height: clamp(88px, 9vw, 120px); width: auto; display: block; }
 .lockup p {
   font-family: var(--font-label); font-weight: 700; font-size: 15px;
-  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-dark); max-width: 16ch; line-height: 1.3;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--paper); max-width: 16ch; line-height: 1.3;
 }
-.everywhere h1 { font-size: clamp(58px, 8vw, 112px); line-height: 0.9; text-wrap: balance; }
+.everywhere h1 { font-size: clamp(64px, 9vw, 124px); line-height: 0.9; text-wrap: balance; }
 .everywhere h1 span { color: var(--accent); }
+.everywhere__tag {
+  font-family: var(--font-label); font-weight: 700; font-size: clamp(20px, 2.2vw, 26px);
+  letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.25;
+}
+.everywhere__tag span {
+  display: block; color: var(--muted-dark); font-weight: 600;
+  letter-spacing: 0.02em; text-transform: none; font-size: 0.78em;
+}
 .everywhere__lede { font-size: 19px; line-height: 1.45; max-width: 46ch; }
+.everywhere__lede--strong { font-weight: 600; }
 .everywhere__side { display: flex; flex-direction: column; gap: 16px; }
 .van { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px 20px; background: var(--accent); color: var(--ink); }
 .van__when { font-size: clamp(30px, 3.4vw, 44px); line-height: 1; }
 .van__where { font-size: 17px; font-weight: 600; line-height: 1.4; }
 .btn--solid-paper { background: var(--paper); color: var(--ink); }
 .everywhere .btn--solid-paper { color: var(--ink); }
-.where { position: relative; padding-top: 32px; padding-bottom: 36px; display: flex; flex-direction: column; gap: 12px; }
-.where .label { color: var(--muted-dark); }
-.where__rows {
-  display: flex; flex-direction: column; gap: 10px;
-  font-family: var(--font-label); font-weight: 700; font-size: 20px;
-  letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2;
-}
-.where__rows p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
-.where__date { color: var(--accent); min-width: 72px; }
-.where__rows .is-here { background: var(--accent); color: var(--ink); padding: 0 6px; }
+.everywhere__spacer { position: relative; height: 44px; }
 .everywhere .hazard { position: relative; }
 
 /* Demands */
@@ -362,6 +362,9 @@ h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
 @media (max-width: 720px) {
   .facts > div + div { border-left: 0; padding-left: 0; border-top: 1px solid rgba(20,16,13,0.25); }
 }
+
+.advisory--update { border-bottom: 1px solid rgba(20,16,13,0.25); }
+.advisory--update .advisory__body { padding-bottom: 56px; }
 
 /* Footer */
 .site-footer .wrap {
